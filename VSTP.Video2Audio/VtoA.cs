@@ -3,7 +3,7 @@ using System.Diagnostics;
 
 namespace VSTP.Video2Audio
 {
-    class VideoToAudio
+    public class VideoToAudio
     {
         private string videoUrl;
         private string targetUrl;

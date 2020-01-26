@@ -40,7 +40,7 @@ namespace VSTP.Video2Audio
         /// <summary>
         /// 开始转换，自动阻塞
         /// </summary>
-        public void Trans()
+        public string Trans()
         {
             process = new Process();
             process.StartInfo.FileName = ffmpegUrl;
@@ -51,6 +51,7 @@ namespace VSTP.Video2Audio
             process.Start();
             process.WaitForExit();
             process.Close();
+            return targetUrl;
         }
     }
 }
